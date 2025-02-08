@@ -16,7 +16,7 @@ import { Chip } from '@heroui/chip';
 
 const center = [23.5937, 78.9629] as [number, number];
 const provider =
-    'https://tiles.stadiamaps.com/tiles/stamen_toner_background/{z}/{x}/{y}{r}.png';
+    'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png';
 
 const Marker = (props: {
     gameState: GameState;
