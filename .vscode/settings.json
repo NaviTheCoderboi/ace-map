@@ -1,0 +1,10 @@
+{
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "tailwindCSS.experimental.configFile": "./tailwind.config.ts",
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}
