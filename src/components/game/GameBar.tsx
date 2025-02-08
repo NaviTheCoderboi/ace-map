@@ -138,7 +138,9 @@ const GameBar = (
                         gameState.setStrictness(Number.parseFloat(v));
                     }}
                     className="w-fit"
-                    startContent={<BsFire className="size-6" />}
+                    label="Strictness"
+                    labelPlacement="outside-left"
+                    endContent={<BsFire className="size-6" />}
                 />
             </div>
         </div>
