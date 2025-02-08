@@ -72,7 +72,7 @@ const Result = ({ code }: { code: string }) => {
     };
     const txtColors = {
         0: 'text-rose-800 dark:text-rose-100',
-        50: 'text-yellow-800 dark:test-yellow-100',
+        50: 'text-yellow-800 dark:text-yellow-100',
         75: 'text-emerald-800 dark:text-emerald-100'
     };
     const shadows = {

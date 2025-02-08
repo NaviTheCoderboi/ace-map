@@ -132,7 +132,7 @@ const GameBar = (
                     type="number"
                     min={0.1}
                     step={0.1}
-                    max={5.0}
+                    max={10.0}
                     value={gameState.strictness.toString()}
                     onValueChange={(v) => {
                         gameState.setStrictness(Number.parseFloat(v));

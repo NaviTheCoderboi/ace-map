@@ -140,7 +140,7 @@ export const useGame = (): GameState => {
         )
             return null;
 
-        const isCorrect = isNearlyCorrect(currentMarker, toMark);
+        const isCorrect = isNearlyCorrect(currentMarker, toMark, strictness);
 
         if (!isCorrect) {
             toast.error('Incorrect! Next time');

@@ -1,6 +1,7 @@
 import Logo from '@assets/Logo';
 import * as Navbar from '@heroui/navbar';
 import ThemeSwitch from './ThemeSwitch';
+import { BsGithub } from 'react-icons/bs';
 
 const Nav = () => {
     return (
@@ -12,6 +13,11 @@ const Nav = () => {
                 </a>
             </Navbar.NavbarBrand>
             <Navbar.NavbarContent justify="end">
+                <Navbar.NavbarItem>
+                    <a href="https://github.com/navithecoderboi">
+                        <BsGithub className="size-6" />
+                    </a>
+                </Navbar.NavbarItem>
                 <Navbar.NavbarItem>
                     <ThemeSwitch />
                 </Navbar.NavbarItem>

@@ -39,11 +39,13 @@ const Marker = (props: {
 
     const icon = new Icon({
         iconUrl: MarkerIcon.src,
-        iconSize: [40, 40]
+        iconSize: [40, 40],
+        iconAnchor: [20, 35]
     });
     const icon2 = new Icon({
         iconUrl: Marker2Icon.src,
-        iconSize: [25, 40]
+        iconSize: [25, 40],
+        iconAnchor: [12.5, 35]
     });
 
     return (
