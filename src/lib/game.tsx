@@ -84,7 +84,7 @@ export const useGame = (): GameState => {
         total: 0,
         current: 0
     });
-    const [strictness, setStrictness] = useState(0.9);
+    const [strictness, setStrictness] = useState(1.0);
     const [category, setCategory] = useState<'all' | string[]>('all');
     const _toMarkPlaces = useMemo(() => getPlace(category), [category]);
     const [toMarkPlaces, setToMarkPlaces] = useState<
