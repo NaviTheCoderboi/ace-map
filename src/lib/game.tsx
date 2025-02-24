@@ -65,6 +65,15 @@ export const encodeResult = (result: GameState) => {
 export const decodeResult = (data: string): Result =>
     JSON.parse(atob(decodeURIComponent(data))) as Result;
 
+const shufflePlaces = (places: Place[]) => {
+    const shuffled = [...places];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+};
+
 export const useGame = (): GameState => {
     const [status, setStatus] = useState<GameStatus>('idle');
     const [timer, setTimer] = useState(0);
@@ -113,7 +122,7 @@ export const useGame = (): GameState => {
             total: 0,
             current: 0
         });
-        setToMarkPlaces(_toMarkPlaces);
+        setToMarkPlaces(shufflePlaces(_toMarkPlaces));
         setCurrentMarker('none');
     };
 
