@@ -15,9 +15,9 @@ import type { PlaceWithoutName } from '@lib/places';
 import { Chip } from '@heroui/chip';
 
 const center = [23.5937, 78.9629] as [number, number];
-// const provider =
-//    'https://tiles.stadiamaps.com/tiles/stamen_toner_background/{z}/{x}/{y}{r}.png';
-const provider = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png";
+ const provider =
+    'https://tiles.stadiamaps.com/tiles/stamen_toner_background/{z}/{x}/{y}{r}.png';
+// const provider = "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png";
 
 const Marker = (props: {
     gameState: GameState;
